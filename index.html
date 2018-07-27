@@ -49,10 +49,97 @@
               <a href="http://github.com/stsewd"><i class="fab fa-github"></i></a>
               <a href="http://twitter.com/stsewd"><i class="fab fa-twitter"></i></a>
             </li>
+            <li>
+              <a href="http://stsewd.github.io/" target="_blank">http://stsewd.github.io/</a>
+            </li>
           </ul>
         </section>
 
-        <section></section>
+        <section>
+          <h2>Colección de PDFs</h2>
+          <section>
+            <ul>
+              <li>Colección desorganizada de libros digitales (probablemente nunca los vamos a leer)</li>
+              <li>Somos programadores, cabeza cuadrada. <strong>TODO</strong> debe estar en orden</li>
+              <li>Somos programadores, tenemos pereza de <strong>TODO</strong></li>
+            </ul>
+          </section>
+
+          <section>
+            <pre>
+              <code class="text" data-trim>
+                books/
+                ├── 97.things.every.programmer.should.know.pdf
+                ├── Algorithms.pdf
+                ├── clean_code.pdf
+                ├── intro algorithms.pdf
+                ├── os - andrew tanenbaum.pdf
+                ├── Refactoring.pdf
+                ├── SoftSkills.pdf
+                └── the_pragmatic_programmer_Andrew_Hunt.pdf
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <header>
+              <h3>Bookpy</h3>
+              <small>pip install bookpy</small>
+            </header>
+
+            <a href="https://github.com/stsewd/bookpy">
+              https://github.com/stsewd/bookpy
+            </a>
+
+            <pre>
+              <code class="bash" data-trim>
+                $ bookpy --help
+
+                bookpy [OPTIONS] [SRCS]...
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <pre>
+              <code class="text" data-trim>
+                books/
+                ├── 97 Things Every Programmer Should Know - Kevlin Henney (2010).pdf
+                ├── Algorithms - Robert Sedgewick.pdf
+                ├── Clean code - Robert C. Martin.pdf
+                ├── Introduction To Algorithms - Thomas H. Cormen (2009).pdf
+                ├── Operating Systems - Andrew S. Tanenbaum (2014).pdf
+                ├── Refactoring - Martin Fowler (1999).pdf
+                ├── Soft Skills - John Z. Sonmez (2014).pdf
+                └── The pragmatic programmer - Andrew Hunt.pdf
+              </code>
+            </pre>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>Extendiendo mi editor</h2>
+
+          <section>
+            <ul>
+              <li>Mi editor es Neovim (fork de Vim)</li>
+              <li>Puedes crear plugins usando VimScript (más horrible que JaVaScRiPt)</li>
+              <li>Neovim expone una API RPC (puedes escribir plugins en cualquier lenguaje)</li>
+              <li>El cliente de Python es muy popular <a href="http://pynvim.readthedocs.io/" target="_blank">http://pynvim.readthedocs.io/</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <dl>
+              <dt><a href="https://github.com/stsewd/isort.nvim" target="_blank">isort.nvim</a></dt>
+              <dd>Integración con isort para ordenar imports de Python</dd>
+
+              <dt><a href="https://github.com/stsewd/spotify.nvim" target="_blank">spotify.nvim</a></dt>
+              <dd>Controlar Spotify desde mi editor</dd>
+            </dl>
+          </section>
+        </section>
 
       </div>
     </div>
@@ -67,6 +154,7 @@
       Reveal.initialize({
         history: true,
         center: false,
+        maxScale: 0.7,
         dependencies: [
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
